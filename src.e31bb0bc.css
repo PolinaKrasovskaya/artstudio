@@ -578,6 +578,7 @@ button:hover,
 .menu-container {
   text-align: center;
   background-color: #fff;
+  border: 1px solid red;
   top: 100%;
   left: 0;
   width: 100%;
