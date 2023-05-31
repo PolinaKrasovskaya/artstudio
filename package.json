@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://saurocket.github.io/firstTeamProjectBlended29",
+  "homepage": "https://PolinaKrasovskaya.github.io/artstudio",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
