@@ -166,7 +166,6 @@ img {
 }
 
 .menu-button {
-  margin-left: auto;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -550,12 +549,52 @@ button:hover,
   }
 }
 
+.header-logo-box {
+  border: 1px solid red;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+}
+@media screen and (min-width: 768px) {
+  .header-logo-box {
+    display: flex;
+    height: 80px;
+  }
+}
+
+.logo {
+  border: 1px solid red;
+}
+
+.header-contact-links {
+  display: flex;
+  border: 1px solid red;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navigation {
   position: relative;
   display: block;
   margin-top: auto;
   margin-bottom: auto;
   border-bottom: 1px solid #ececec;
+  border: 1px solid blue;
+}
+
+.logo-mob {
+  border: 1px solid red;
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .logo-mob {
+    display: none;
+  }
 }
 
 .main-nav {
@@ -564,7 +603,6 @@ button:hover,
 }
 @media screen and (max-width: 767px) {
   .main-nav {
-    width: 100%;
     justify-content: space-between;
     height: 60px;
   }
@@ -630,6 +668,9 @@ button:hover,
     margin-left: 93px;
   }
 }
+.site-nav .item {
+  border: 1px solid red;
+}
 @media screen and (max-width: 767px) {
   .site-nav .item {
     padding-bottom: 40px;
@@ -658,6 +699,7 @@ button:hover,
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: black;
+  border: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .menu-link {
@@ -670,6 +712,7 @@ button:hover,
 
 /*Auth-nav*/
 .auth-nav {
+  border: 1px solid greenyellow;
   align-items: center;
   margin: auto 0;
 }
@@ -691,7 +734,7 @@ button:hover,
 }
 @media screen and (min-width: 1200px) {
   .auth-nav {
-    display: flex;
+    display: none;
   }
   .auth-nav .item + .item {
     margin-left: 50px;
@@ -699,6 +742,7 @@ button:hover,
 }
 
 .contact-link {
+  border: 1px solid red;
   display: inline-flex;
   align-items: center;
   font-size: 18px;
@@ -730,20 +774,10 @@ button:hover,
 }
 
 .icon-contact {
+  border: 1px solid red;
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-
-.header-logo-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid grey;
-}
-
-.header-contact-links {
-  display: flex;
 }
 
 button:hover,
