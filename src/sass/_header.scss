@@ -1,17 +1,57 @@
+
+.header-logo-box{
+  border: 1px solid red;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    height: 80px;
+}
+}
+
+.logo{
+  border: 1px solid red;
+}
+.header-contact-links{
+  display: flex;
+  border: 1px solid red;
+}
+
+.container-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+}
+
 .navigation {
      position: relative;
      display: block;
      margin-top: auto;
      margin-bottom: auto;
      border-bottom: 1px solid #ececec;
+     border: 1px solid blue;
    }
    
+   .logo-mob{
+    border: 1px solid red;
+    display: flex;
+
+    @media screen and(min-width: 1200px) {
+      display: none;
+ }
+   }
    .main-nav {
      display: flex;
      align-items: center;
+     
    
      @media screen and(max-width: 767px) {
-       width: 100%;
+      //  width: 100%;
        justify-content: space-between;
        height: 60px;
      }
@@ -72,6 +112,7 @@
      }
    
      .item {
+      border: 1px solid red;
        @media screen and(max-width: 767px) {
          padding-bottom: 40px;
        }
@@ -100,6 +141,7 @@
      line-height: 1.17;
      letter-spacing: 0.02em;
      color: black;
+     border: 1px solid red;
    
      @media screen and(min-width: 768px) {
        font-size: 14px;
@@ -111,6 +153,7 @@
    
    /*Auth-nav*/
    .auth-nav {
+    border: 1px solid greenyellow;
      align-items: center;
      margin: auto 0;
      @media screen and(min-width: 1200px) {
@@ -127,7 +170,7 @@
        }
      }
      @media screen and(min-width: 1200px) {
-       display: flex;
+       display: none;
    
        .item + .item {
          margin-left: 50px;
@@ -135,6 +178,7 @@
      }
    }
    .contact-link {
+    border: 1px solid red;
      display: inline-flex;
      align-items: center;
    
@@ -158,12 +202,14 @@
      }
    }
    .item {
+    
      display: block;
      align-items: center;
      justify-content: center;
    }
    
    .icon-contact {
+    border: 1px solid red;
      width: 16px;
      height: 16px;
      margin-right: 10px;
@@ -377,17 +423,6 @@
 //           align-items: center;
 //      }
 // }
-
-.header-logo-box{
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     border-bottom: 1px solid grey;
-}
-
-.header-contact-links{
-     display: flex;
-}
 
 // .header-contact-link{
 //      margin-left: 10px;
