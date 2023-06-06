@@ -24,6 +24,20 @@
   <include src="./partials/footer.html"></include>
   <include src="./partials/_arrowUp.html"></include>
 
+  <script
+    defer
+    src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
+  />
+
+  <img-comparison-slider>
+    <img slot="first" src="../src/img/1.jpg" />
+    <img slot="second" src="../src/img/2.jpg" />
+  </img-comparison-slider>
+
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
           
