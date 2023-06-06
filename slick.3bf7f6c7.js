@@ -117,13 +117,38 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/script.js":[function(require,module,exports) {
-// $(document).ready(function () { 
-//     $('.slider-coments').slick({
-//         dots: true,
-//     });
-// }
-//     )
+})({"js/slick.js":[function(require,module,exports) {
+$('.slicksl').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: true,
+      dots: true
+    }
+  }, {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  }, {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  } // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+  ]
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -152,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54965" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54612" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -328,5 +353,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/script.js"], null)
-//# sourceMappingURL=/script.d573be0b.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slick.js"], null)
+//# sourceMappingURL=/slick.3bf7f6c7.js.map

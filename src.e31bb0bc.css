@@ -438,6 +438,19 @@ button:hover,
   }
 }
 
+.gallery-list {
+  display: flex;
+  list-style: none;
+}
+
+.gallery-item {
+  margin-left: 20px;
+}
+
+.gallery-image {
+  width: 200px;
+}
+
 .products {
   background-color: #ffffff;
   border: 1px solid #d41443;
