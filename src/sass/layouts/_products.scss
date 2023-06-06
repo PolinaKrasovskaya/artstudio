@@ -32,3 +32,17 @@
       margin-bottom: 259px;
     }
   }
+
+
+  .gallery-list{
+    display: flex;
+    list-style: none;
+  }
+
+  .gallery-item{
+    margin-left: 20px;
+  }
+
+  .gallery-image{
+    width: 200px;
+  }
