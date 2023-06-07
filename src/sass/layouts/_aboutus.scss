@@ -1,17 +1,17 @@
 @import './styleDefoult/mixin';
-.products {
+.aboutus {
   background-color: #ffffff;
   border: 1px solid #d41443;
   height: 740px;
   width: 100%;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
 
-.products-heading {
+.aboutus-heading {
   margin-top: 0;
-  margin-bottom: 144px;
+  // margin-bottom: 144px;
   text-align: center;
   text-transform: uppercase;
   font-family: Titan One;
