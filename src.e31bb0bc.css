@@ -505,7 +505,8 @@ button:hover,
 }
 
 .gallery-img {
-  height: 430px;
+  padding-left: 20px;
+  height: 355px;
 }
 
 .my-page {
