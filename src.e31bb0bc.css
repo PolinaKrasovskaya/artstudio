@@ -320,7 +320,7 @@ button:hover,
   cursor: pointer;
 }
 
-.products {
+.aboutus {
   background-color: #ffffff;
   border: 1px solid #d41443;
   height: 740px;
@@ -330,9 +330,8 @@ button:hover,
   justify-content: center;
 }
 
-.products-heading {
+.aboutus-heading {
   margin-top: 0;
-  margin-bottom: 144px;
   text-align: center;
   text-transform: uppercase;
   font-family: Titan One;
@@ -343,14 +342,14 @@ button:hover,
   color: #d41443;
 }
 @media screen and (min-width: 768px) {
-  .products-heading {
+  .aboutus-heading {
     font-size: 48px;
     line-height: 1.15;
     margin-bottom: 150px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .products-heading {
+  .aboutus-heading {
     font-size: 58px;
     line-height: 1.14;
     margin-bottom: 259px;
@@ -479,7 +478,7 @@ button:hover,
   margin-left: auto;
   margin-right: auto;
   border: 1px solid blue;
-  width: 390px;
+  width: 370px;
 }
 @media screen and (min-width: 768px) {
   .splide-section {
