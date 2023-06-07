@@ -509,6 +509,14 @@ button:hover,
   height: 430px;
 }
 
+.my-page {
+  background-color: #d41443;
+}
+
+.my-page.is-active {
+  background-color: #d41443;
+}
+
 .products {
   background-color: #ffffff;
   border: 1px solid #d41443;
