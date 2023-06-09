@@ -117,30 +117,6 @@ img {
   }
 }
 
-.psevdo-active {
-  position: relative;
-}
-.psevdo-active:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  margin: 0 auto;
-  margin-top: 8px;
-  background: #2196f3;
-  border-radius: 4px;
-}
-@media (min-width: 768px) {
-  .psevdo-active:after {
-    margin-top: 28px;
-  }
-}
-
-.current:visited {
-  color: #2196f3;
-}
-
 .button {
   display: inline-block;
   align-items: center;
@@ -171,6 +147,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  border: 1px solid red;
 }
 .menu-button .icon-cross {
   display: none;
@@ -629,7 +606,14 @@ button:hover,
   }
 }
 
-.header-logo-box {
+.header {
+  position: relative;
+  display: block;
+  margin: auto;
+  border: 1px solid blue;
+}
+
+.header-main {
   border: 1px solid red;
   display: none;
   align-items: center;
@@ -637,9 +621,39 @@ button:hover,
   border-bottom: 1px solid grey;
 }
 @media screen and (min-width: 768px) {
-  .header-logo-box {
+  .header-main {
     display: flex;
     height: 80px;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  border: 1px solid red;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tab-contacts {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tab-contacts {
+    display: flex;
   }
 }
 
@@ -647,28 +661,35 @@ button:hover,
   border: 1px solid red;
 }
 
-.header-contact-links {
-  display: flex;
-  border: 1px solid red;
-}
-
-.container-header {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid yellow;
 }
 
-.navigation {
-  position: relative;
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-bottom: 1px solid #ececec;
-  border: 1px solid blue;
+.main-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid pink;
+}
+@media screen and (max-width: 767px) {
+  .main-nav {
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    height: 80px;
+    justify-content: center;
+  }
 }
 
 .links-mob {
   display: flex;
+  width: 190px;
 }
 @media screen and (min-width: 768px) {
   .links-mob {
@@ -680,26 +701,9 @@ button:hover,
   border: 1px solid red;
   display: flex;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .logo-mob {
     display: none;
-  }
-}
-
-.main-nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .main-nav {
-    justify-content: space-between;
-    height: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main-nav {
-    height: 80px;
   }
 }
 
@@ -709,21 +713,19 @@ button:hover,
   border: 1px solid red;
   top: 100%;
   left: 0;
-  width: 100%;
   display: flex;
-  align-items: center;
   z-index: 100;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: flex;
+    text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     background-color: #fff;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100vw;
-    padding: 60px;
+    border-radius: 0 0 100px 0;
+    width: 250px;
+    padding: 20px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -733,34 +735,21 @@ button:hover,
 }
 .menu-container.is-open {
   display: block;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
     display: flex;
+    border-radius: 0;
   }
 }
 
 .site-nav {
   margin-bottom: 0;
-}
-@media screen and (max-width: 767px) {
-  .site-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
-    margin-left: 88px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    display: flex;
-    margin-left: 93px;
   }
 }
 .site-nav .item {
@@ -768,48 +757,52 @@ button:hover,
 }
 @media screen and (max-width: 767px) {
   .site-nav .item {
-    padding-bottom: 40px;
+    display: flex;
+    height: 40px;
+    justify-content: left;
   }
 }
 @media screen and (max-width: 767px) {
   .site-nav .item:last-child {
-    padding-bottom: 60px;
+    display: flex;
+    height: 40px;
+    justify-content: left;
+    margin-bottom: 20px;
   }
-}
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
 }
 @media screen and (max-width: 767px) {
   .site-nav .item:not(:last-child) {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
 .site-nav .link {
   display: block;
 }
 
-.menu-link {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: black;
-  border: 1px solid red;
-}
-@media screen and (min-width: 768px) {
-  .menu-link {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
+.nav-link {
+  width: 300px;
+  text-decoration: none;
 }
 
-/*Auth-nav*/
 .auth-nav {
   border: 1px solid greenyellow;
   align-items: center;
-  margin: auto 0;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .auth-nav {
@@ -817,7 +810,8 @@ button:hover,
   }
 }
 .auth-nav .item {
-  padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .auth-nav .item {
@@ -828,12 +822,15 @@ button:hover,
   }
 }
 @media screen and (min-width: 1200px) {
-  .auth-nav {
+  .auth-nav .item {
     display: none;
   }
-  .auth-nav .item + .item {
+  .auth-nav .item .item + .item {
     margin-left: 50px;
   }
+}
+.auth-nav .item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .contact-link {
